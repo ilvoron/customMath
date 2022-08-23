@@ -10,6 +10,4 @@ Simply, it bases on "converting" this text to something what computer can unders
 
 This project is rebuild of my old code which was written in Pascal as I was in a school (maybe it was 2015).
 The idea of this came to me when I was like "wow, how this thing (an app) understand my writings (equations) and can solve them and show to me step-by-step solution". I was impressed, so I decided to create something like that.
-After year I found that project and decided to recreate it with my current skills in C# (it was August 2021).
-
-Here's one more interesting fact: after school I wanted to apply to somewhere where I can learn computer science, but 'cause of my parents I decided to go to become a doctor (huge step). And as expected, nothing good happen so after 1.5 year of education I left it (it was 22th February 2022. It's quite symbolic 'cause I from Russian and there're some bad things happen on the 24th February) and got issues (well, I guess, we all have some of them). So now I finally "heal" myself so I can say that was enlightening and I really want to learn computer science and write a code.
+After years I found that project and decided to recreate it with my current skills in C# (it was August 2021).
