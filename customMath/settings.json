@@ -1,0 +1,37 @@
+{
+	"Numerals": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+	"Brackets": [
+		["(", ")"],
+		["[", "]"]
+	],
+	"Operators": [
+		{
+			"+": "plus",
+			"-": "minus"
+		},
+		{
+			"*": "multiply",
+			"/": "divide"
+		},
+		{
+			"^": "powerOp"
+		},
+		{
+			"°": "deg",
+			"%": "percent"
+		}
+	],
+	"Functions": {
+		"sin": "sin",
+		"cos": "cos",
+		"tan": "tan",
+		"cot": "cot",
+		"degToRad": "degToRad",
+		"radToDeg": "radToDeg",
+		"power": "power",
+		"sqrt": "sqrt"
+	},
+	"Constants": {
+		"pi": "pi"
+	}
+}
