@@ -1,3 +1,11 @@
+<div align="center">
+  
+  <a href="" title="OS">![OS](https://img.shields.io/badge/os-Linux_|_macOS_|_Windows-blue?cacheSeconds=3600)</a>
+  <a href="" title=".NET Core 3.1">![OS](https://img.shields.io/badge/.NET_Core-3.1-blue?cacheSeconds=3600)</a>
+  <a href="" title="GitHub License">![GitHub License](https://img.shields.io/github/license/ilvoron/SnakeGameC?cacheSeconds=3600)</a>
+  
+</div>
+
 # Reverse Polish Notation (RPN) Text Calculator
 
 ## Overview
