@@ -1,13 +1,36 @@
-# What it is?
+# Reverse Polish Notation (RPN) Text Calculator
 
-It it a simple text calculator using [reverse polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation). It pretty extensible so you can add new functions as much as you want.
+## Overview
 
-So. How is works? Imagine a situation when you write a string like "3+4". As for you it has meaning: it's an expression; and you can solve it: the answer is 7. But how can you tell a computer this? Yes, you can write this as code and print the output, but what if we wanna use other number or write a more complicated expressions like "sqrt(9) + 21*7 - (3+4)/2". So, I repeat. How can you tell a computer what is it? and what should it do with this text? I believe that there're many answers on this question. But one of them is [reverse polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation).
+This project is a simple yet extensible text-based calculator using **Reverse Polish Notation (RPN)**. It allows you to easily add new functions and operators as needed, making it a powerful tool for solving various mathematical expressions.
 
-Simply, it bases on "converting" this text to something what computer can understand. So the text "3+4" converts to [3, 4, "+"]. And the computer goes through this array from left to right trying to find an operator. When it found one it looking for what to do. For "+" it's "sum two items before". And then the array from [3, 4, "+"] comes to [7]. And 'cause array is now has one item, he prints the answer - "7". In reality it's more complicated 'cause we have different priority of some operators (like "+" and "*"), we have brackets, we have functions and other. But basic principles are the same.
+## How It Works
 
-# Background
+Let’s say you write an expression like `3 + 4`. For you, this has meaning—it's an arithmetic expression, and you know that the result is `7`. But how can you tell a computer to understand and solve this? Writing the expression directly into code is one approach, but what if you want to work with different numbers or more complex expressions like:
 
-This project is rebuild of my old code which was written in Pascal as I was in a school (maybe it was 2015).
-The idea of this came to me when I was like "wow, how this thing (an app) understand my writings (equations) and can solve them and show to me step-by-step solution". I was impressed, so I decided to create something like that.
-After years I found that project and decided to recreate it with my current skills in C# (it was August 2021).
+```
+sqrt(9) + 21 * 7 - (3 + 4) / 2
+```
+
+One solution is **Reverse Polish Notation**.
+
+### What is Reverse Polish Notation (RPN)?
+
+RPN is a way to represent mathematical expressions without the need for parentheses, based on how computers process operations. Instead of writing expressions in the standard form (`3 + 4`), RPN uses a stack-based approach. The expression `3 + 4` would be transformed into `3 4 +`. 
+
+Here’s how the process works:
+
+1. Convert the expression into RPN: `3 + 4` becomes `[3, 4, "+"]`.
+2. The computer scans the array from left to right. When it encounters an operator like `+`, it applies the operation to the previous two items (`3` and `4`).
+3. The array then reduces to `[7]`.
+4. Once there's only one item left, the result is printed, which in this case is `7`.
+
+The RPN approach becomes more useful when handling expressions with different operator priorities, brackets, and functions.
+
+### Example
+
+For a more complex expression like `sqrt(9) + 21 * 7 - (3 + 4) / 2`, RPN converts it into a format that’s easy for the computer to understand and solve.
+
+## Background
+
+This project is a rewrite of code I originally wrote in Pascal back in 2015, while I was still in school. The inspiration came from my curiosity about how software can interpret and solve equations step by step. I was fascinated by this and decided to create something similar. In August 2021, I revisited the project and rewrote it in C# using my current skills.
